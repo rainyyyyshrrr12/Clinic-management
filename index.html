@@ -19,9 +19,9 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#login">Doctor</a></li>
-                <li><a href="#add-tab">Receptionist </a></li>
-                <li><a href="#recipes"> Patient information</a></li>
-                <li><a href="#contact"> Billing advice</a></li>
+                <li><a href="#login">Receptionist </a></li>
+                <li><a href="#patients"> Patient information</a></li>
+                <li><a href="#billPatientName"> Billing </a></li>
             </ul>
     </header>
      <section class="hero">
@@ -32,12 +32,14 @@
     
     </section>
 
-     <div class="content">
+          <div class="content">
             <!-- Login Section -->
             <div id="login" class="section active">
                 <div class="grid">
+            
                     <div class="login-form">
                         <h2>Doctor Login</h2>
+                         <form onsubmit="return loginDoctor(event)">
                         <div class="form-group">
                             <label>Username</label>
                             <input type="text" id="doctorUsername" placeholder="Enter doctor username">
@@ -46,11 +48,13 @@
                             <label>Password</label>
                             <input type="password" id="doctorPassword" placeholder="Enter password">
                         </div>
-                        <a href="./dash.html">Login as Doctor</a>
+                        <button class="btn btn-success">Login as Doctor</button>
+                        </form>
                     </div>
-
-                     <div class="login-form">
+                    
+                    <div class="login-form">
                         <h2>Receptionist Login</h2>
+                         <form onsubmit="return loginreception(event)">
                         <div class="form-group">
                             <label>Username</label>
                             <input type="text" id="receptionistUsername" placeholder="Enter receptionist username">
@@ -59,10 +63,47 @@
                             <label>Password</label>
                             <input type="password" id="receptionistPassword" placeholder="Enter password">
                         </div>
-                       <a href="#">Login as Receptionist</a>
+                        <button class="btn btn-info">Login as Receptionist</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <div id="patients" class="section">
+                <h2>Patient Records</h2>
+                <div id="patientList"></div>
+            </div>
+        </div>
+    </div>
+      <div>
+                        <h3>Create Patient Bill</h3>
+                        <div class="form-group">
+                            <label>Patient Name</label>
+                            <input type="text" id="billPatientName" placeholder="Enter patient name">
+                        </div>
+                        <div class="form-group">
+                            <label>Consultation Fee</label>
+                            <input type="number" id="consultationFee" placeholder="Enter consultation fee" value="500">
+                        </div>
+                        <div class="form-group">
+                            <label>Medicine Cost</label>
+                            <input type="number" id="medicineCost" placeholder="Enter medicine cost" value="0">
+                        </div>
+                        <div class="form-group">
+                            <label>Lab Tests</label>
+                            <input type="number" id="labTests" placeholder="Enter lab test cost" value="0">
+                        </div>
+                        <div class="form-group">
+                            <label>Other Charges</label>
+                            <input type="number" id="otherCharges" placeholder="Enter other charges" value="0">
+                        </div>
+                        <button class="btn btn-warning" onclick="generateBill()">Generate Bill</button>
+                        
+                        <div id="billDisplay"></div>
                     </div>
                 </div>
             </div>
 
+        
+<script src="script.js"></script>
 </body>
 </html>
