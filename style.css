@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+header{
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+
+.container{
+    width:50%;
+    margin: 0 auto;
+    /* display: flex; */
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-flex;
+    margin-right: 25px;
+    font-weight: 600;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: lavender;
+}
+.container .logo{
+    color: white;
+}
+
+.hero{
+    background-image: url('./doctor_management.png');
+    height: 448px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color:black;
+    text-align: center;
+    padding: 140px 0;
+    font-size: 2rem;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+.hero h1{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.hero p{
+    /* font-size: 1.2rem; */
+    margin-bottom: 10px;
+}
+
+.content {
+            padding: 30px;
+            min-height: 500px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+        }
+        .grid {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between the two login forms */
+    flex-wrap: wrap; /* Makes it responsive on smaller screens */
+    align-items: flex-start;
+}
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+
+
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .grid a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+     background: linear-gradient(135deg, #56ab2f 0%, #a8e6cf 100%);
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.grid a:hover{
+   transform: translateY(-2px);
+}
