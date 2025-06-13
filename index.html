@@ -6,21 +6,22 @@
     <title>Document</title>
      <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 
 </head>
 <body>
      <header>
         <div class="container">
-            <h1 class="logo"><i class='bx bx-heart-plus'></i>  Wellness Home</h1>
+            <h1 class="logo"><i class='bx bxs-hospital' ></i> Wellness Home</h1>
             <p class="subtitle">Comprehensive Healthcare Management Solution</p>
         </div>
         <nav>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
-                <li><a href="#login">Doctor</a></li>
-                <li><a href="#login">Receptionist </a></li>
-                <li><a href="#patients"> Patient information</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#login">Login </a></li>
+                <li><a href="./record.html"> Patient information</a></li>
                 <li><a href="#billPatientName"> Billing </a></li>
             </ul>
     </header>
@@ -31,6 +32,37 @@
         </div>
     
     </section>
+
+   <section class="about" id="about">
+        <div class="floating-spice"></div>
+        <div class="floating-spice"></div>
+        <div class="floating-spice"></div>
+        
+        <div class="img-abt">
+            <img src="./imgg.png" alt="img">
+        </div>
+        
+        <div class="abt-text">
+            <h2>About Us</h2>
+            <p>We are a modern health care center dedicated to providing the best patient care and health services. Our team of experienced doctors, nurses, and health care providers are here to serve you with compassion and expertise.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <span class="stat-number">5K+</span>
+                    <span class="stat-label">Doctors</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25K+</span>
+                    <span class="stat-label">Users</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Countries</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
           <div class="content">
             <!-- Login Section -->
@@ -68,12 +100,7 @@
                     </div>
                 </div>
             </div>
-             <div id="patients" class="section">
-                <h2>Patient Records</h2>
-                <div id="patientList"></div>
-            </div>
-        </div>
-    </div>
+         
       <div>
                         <h3>Create Patient Bill</h3>
                         <div class="form-group">
